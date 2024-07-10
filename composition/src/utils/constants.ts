@@ -103,6 +103,15 @@ export const DEPRECATED_DEFINITION: MutableDirectiveDefinitionNode = {
         value: DEFAULT_DEPRECATION_REASON,
       },
     },
+    {
+      directives: [],
+      kind: Kind.INPUT_VALUE_DEFINITION,
+      name: stringToNameNode("deletionDate"),
+      type: stringToNamedTypeNode(STRING_SCALAR),
+      defaultValue: {
+        kind: Kind.NULL
+      },
+    },
   ],
   kind: Kind.DIRECTIVE_DEFINITION,
   locations: stringArrayToNameNodeArray([
